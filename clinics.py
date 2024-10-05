@@ -2,7 +2,7 @@ import firebase_admin
 from firebase_admin import credentials, firestore
 
 
-def alter_document(db, collection_name, document_name, attributes_list, changed_attribute, value):
+def alter_dictionary(db, collection_name, document_name, attributes_list, changed_attribute, value):
     
     results = db.collection(collection_name).document(document_name).get()
     current_values = results.to_dict()
@@ -21,8 +21,7 @@ def alter_document(db, collection_name, document_name, attributes_list, changed_
         print('This attribute does not exist in this document')
         return None
 
-def create_student_database():
-    pass
+
 
 def main():
 
@@ -34,7 +33,7 @@ def main():
 
     clinic_attributes = {'total students': int, 'student limit' : int, 'Day' : list}
 
-    new_values = alter_document(db, 'Clinics', 'Ages 11-13',clinic_attributes, 'Day', ['Monday', 'Wednesday', 'Friday'] )
+    new_values = alter_dictionary(db, 'Clinics', 'Ages 11-13',clinic_attributes, 'Day', ['Monday', 'Wednesday', 'Friday'] )
     db.collection("Clinics").document("Ages 11-13").set(new_values)
 
 
