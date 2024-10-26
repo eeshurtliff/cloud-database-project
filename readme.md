@@ -7,6 +7,10 @@
 **Project Goals**:
 * Create the Firestore Database and learn how to add to it. 
 * Connect python to the Firestore Database
+* Query from the Database
+* Update parts of the database.
+* Add documents to the database
+* Delete documents from the database. 
 
 ## Instructions for Build and Use
 
@@ -18,9 +22,9 @@ Steps to build and/or run the software:
 
 Instructions for using the software:
 
-1. First step here
-2.
-3.
+1. Run the code
+2. Choose an option from the main menu in the terminal.
+3. Follow the prompts from there to look at and edit things from the database. 
 
 ## Development Environment 
 
@@ -56,3 +60,5 @@ The following items I plan to fix, improve, and/or add to this project in the fu
 * [ ] Create real Authenification for the Coach
 * [ ] Create and implement authenification for other users like students and parents
 * [ ] Create a new collection to track the parent's information.
+* [ ] Allow the user to update references in the database
+* [ ] Create an option for making new Clinics
